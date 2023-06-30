@@ -33,55 +33,55 @@ if "%secim%"=="1" (
     goto menu
 ) else if "%secim%"=="2" (
     echo Visual Studio Code indiriliyor...
-    start "" "https://code.visualstudio.com/Download"
+    curl -o "VisualStudioCodeSetup.exe" -L "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="3" (
     echo XAMPP indiriliyor...
-    start "" "https://www.apachefriends.org/tr/download.html"
+    curl -o "xampp.exe" -L "https://www.apachefriends.org/xampp-files/8.0.12/xampp-windows-x64-8.0.12-0-VS16-installer.exe"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="4" (
     echo Node.js indiriliyor...
-    start "" "https://nodejs.org/en/download/"
+    curl -o "nodejs.msi" -L "https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="5" (
     echo Git indiriliyor...
-    start "" "https://git-scm.com/downloads"
+    curl -o "GitSetup.exe" -L "https://github.com/git-for-windows/git/releases/download/v2.33.1.windows.1/Git-2.33.1-64-bit.exe"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="6" (
     echo Python indiriliyor...
-    start "" "https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe"
+    curl -o "python.exe" -L "https://www.python.org/ftp/python/3.9.7/python-3.9.7-amd64.exe"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="7" (
     echo Sublime Text indiriliyor...
-    start "" "https://www.sublimetext.com/download"
+    curl -o "SublimeTextSetup.exe" -L "https://download.sublimetext.com/Sublime%20Text%20Build%203216%20x64%20Setup.exe"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="8" (
     echo MySQL Workbench indiriliyor...
-    start "" "https://dev.mysql.com/downloads/workbench/"
+    curl -o "MySQLWorkbench.msi" -L "https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-8.0.27-winx64.msi"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="9" (
     echo FileZilla indiriliyor...
-    start "" "https://filezilla-project.org/download.php"
+    curl -o "FileZillaSetup.exe" -L "https://download.filezilla-project.org/client/FileZilla_3.57.1_win64_sponsored-setup.exe"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
 ) else if "%secim%"=="10" (
     echo Postman indiriliyor...
-    start "" "https://www.postman.com/downloads/"
+    curl -o "PostmanSetup.exe" -L "https://dl.pstmn.io/download/latest/win64"
     echo İndirme tamamlandı!
     timeout 3 >nul
     goto menu
